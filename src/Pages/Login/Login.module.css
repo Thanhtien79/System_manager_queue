@@ -1,0 +1,169 @@
+.BoxLogin {
+    position: relative;
+width: 1440px;
+height: 810px;
+
+
+background: #F7F7F7;
+border-radius: 16px;
+}
+/* logo alta */
+.Logoleft img {
+    
+position: absolute;
+width: 170px;
+height: 136px;
+left: 208px;
+top: 82px;
+}
+.Input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 94px;
+    top: 293px;
+
+}
+.Input input{
+    height: 44px;
+    width: 400px;
+    
+}
+.Pass {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 400px;
+height: 75px;
+left: 94px;
+top: 384px;
+}
+.Pass input{
+    height: 44px;
+    width: 400px;
+}
+.PassForgot {
+    position: absolute;
+width: 102px;
+height: 21px;
+left: 94px;
+top: 471px;
+
+/* 14/14 Reg */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+
+
+/* Red */
+
+}
+.PassForgot a{
+    color: #E73F3F;
+    text-decoration: none;
+    
+}
+.BtnLogin{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 24px;
+gap: 8px;
+
+position: absolute;
+width: 162px;
+height: 40px;
+left: 215px;
+top: 511px;
+
+/* Orange/$-Orange-400 */
+
+background: #FF9138;
+/* down */
+
+box-shadow: 0px 0px 6px #E7E9F2;
+border-radius: 8px;
+}
+
+.LoginRight{
+    position: absolute;
+    width: 848px;
+    height: 810px;
+    left: 592px;
+    top: 0px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+}
+
+.LogoRight img {
+    
+position: absolute;
+width: 605px;
+height: 614.06px;
+left: 79px;
+top: 112.94px;
+right: 164px;
+}
+
+.TextRight h1{
+    position: absolute;
+width: 142px;
+height: 54px;
+left: 454px;
+top: 407px;
+
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 51px;
+
+
+text-align: center;
+
+color: #FF7506;
+
+}
+.TextRights h1{
+    position: absolute;
+width: 361px;
+height: 54px;
+left: 454px;
+top: 407px;
+
+/* 36/36 Xbold */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 1000;
+font-size: 35px;
+line-height: 154px;
+/* identical t11o box height, or 150% */
+
+text-align: center;
+
+/* Orange/$-Orange-500 */
+
+color: #FF7506;
+
+}
