@@ -2,8 +2,10 @@ import React from 'react'
 import LogoAlta from '../../assets/img/Logo alta.png'
 import LogoRight from '../../assets/img/Group 341.png'
 import Class from '../Login/Login.module.css'
+import { EyeInvisibleOutlined } from '@ant-design/icons';
 
-export default function Login() {
+export default function Login() 
+{
     return (
         <div className={Class.LoginUser}>
             <div className={Class.BoxLogin}>
@@ -18,7 +20,12 @@ export default function Login() {
                     </div>
                     <div className={Class.Pass}>
                         <p>Mật khẩu *</p>
-                        <input type='text' ></input>
+                        <input type='text'  ></input>
+                       
+                    </div>
+                    <div className={Class.icon}>
+                    <EyeInvisibleOutlined />
+                    {/* <button onClick={ }>  <EyeInvisibleOutlined /></button> */}
                     </div>
                     <div className={Class.PassForgot}> 
                      <a href='#'> Quên mật khẩu ?</a>

@@ -34,6 +34,7 @@ top: 82px;
 .Input input{
     height: 44px;
     width: 400px;
+    border-radius: 8px;
     
 }
 .Pass {
@@ -53,6 +54,7 @@ top: 384px;
 .Pass input{
     height: 44px;
     width: 400px;
+    border-radius: 8px;
 }
 .PassForgot {
     position: absolute;
@@ -79,7 +81,7 @@ line-height: 21px;
     text-decoration: none;
     
 }
-.BtnLogin{
+.BtnLogin button{
     display: flex;
 flex-direction: row;
 justify-content: center;
@@ -112,6 +114,18 @@ border-radius: 8px;
     /* White */
     
     background: #FFFFFF;
+}
+.icon{
+    box-sizing: border-box;
+
+position: absolute;
+
+left: 465.66px;
+top: 428.66px;
+ color:   #7E7D88;
+/* gray blue/gray 4 - place holder */
+
+
 }
 
 .LogoRight img {
