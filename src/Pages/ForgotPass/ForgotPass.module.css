@@ -82,6 +82,7 @@ top: 391px;
 }
 
 
+
 .Cancel button {
     display: flex;
     flex-direction: row;
@@ -118,6 +119,37 @@ height: 560px;
 left: 43px;
 top: 153px;
 }
+.Cancel button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 162px;
+    height: 40px;
+    left: 92px;
+    top: 483px;
+    
+    /* Orange/$-Orange-400 */
+    
+    background:#F6F6F6;
+    color:  #FF9138;
+    /* down */
+    
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    border-color: #FF9138;
+    
+}
+
 .Resume button {
     display: flex;
     flex-direction: row;
@@ -134,7 +166,7 @@ top: 153px;
     position: absolute;
     width: 162px;
     height: 40px;
-    left: 304px;
+    left: 330px;
     top: 483px;
     
     /* Orange/$-Orange-400 */
@@ -145,6 +177,7 @@ top: 153px;
     
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px;
+    border-color: #FF9138;
 }
 
 

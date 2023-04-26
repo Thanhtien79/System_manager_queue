@@ -1,4 +1,4 @@
-.BoxLogin {
+.BoxSet {
     position: relative;
 width: 1440px;
 height: 810px;
@@ -16,27 +16,6 @@ height: 136px;
 left: 208px;
 top: 82px;
 }
-.Text {
-    position: absolute;
-left: 13.75%;
-right: 71.6%;
-top: 39.51%;
-bottom: 56.42%;
-
-/* 22/22 Bold */
-
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 33px;
-/* identical to box height, or 150% */
-
-
-/* Gray/$-gray-500 */
-
-color: #d7d6e6;
-}
 .Input {
     display: flex;
     flex-direction: column;
@@ -47,7 +26,7 @@ color: #d7d6e6;
     
     position: absolute;
     width: 400px;
-    height: 78px;
+    height: 75px;
     left: 94px;
     top: 293px;
 
@@ -56,7 +35,6 @@ color: #d7d6e6;
     height: 44px;
     width: 400px;
     border-radius: 8px;
-    border-color: #13151861;
     
 }
 .Pass {
@@ -72,22 +50,12 @@ width: 400px;
 height: 75px;
 left: 94px;
 top: 384px;
-border-color: black;
 }
-.Pass Input {
-    height: 25px;
+.Pass input{
+    height: 44px;
+    width: 400px;
+    border-radius: 8px;
 }
-
-
-
-/* Gray/$-gray-100 */
-
-
-
-/* Inside auto layout */
-
-
-
 .PassForgot {
     position: absolute;
 width: 102px;
@@ -114,10 +82,7 @@ line-height: 21px;
     
 }
 .BtnLogin button{
-   
-/* Auto layout */
-
-display: flex;
+    display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
@@ -131,18 +96,36 @@ left: 215px;
 top: 511px;
 
 /* Orange/$-Orange-400 */
-
+color: white;
 background: #FF9138;
 /* down */
 
 box-shadow: 0px 0px 6px #E7E9F2;
 border-radius: 8px;
 border-color: #FF9138;
-color:  white;
+}
+.TitleSet {
+    position: absolute;
+left: 13.75%;
+right: 71.6%;
+top: 30%;
+bottom: 56.42%;
+
+/* 22/22 Bold */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 33px;
+/* identical to box height, or 150% */
+
+
+/* Gray/$-gray-500 */
+
+color: #282739;
 
 }
-
-
 .LoginRight{
     position: absolute;
     width: 848px;
@@ -153,6 +136,14 @@ color:  white;
     /* White */
     
     background: #FFFFFF;
+}
+
+/* grayI blue/gray 4 - place holder */
+.Input Input{
+    height: 25px;
+}
+.Pass Input{
+    height: 25px;
 }
 
 

@@ -15,7 +15,7 @@ export default function ForgotPass() {
             <p> Đặt lại mật khẩu </p>
           </div>
           <div className={Class.TextRights}>
-            <p> Vui lòng nhập email để lại mật khẩu của bạn*</p>
+            <p> Vui lòng nhập email để đặt lại mật khẩu của bạn*</p>
           </div>
           <div className={Class.Input}>
             <input type='text' ></input>
