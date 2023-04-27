@@ -1,0 +1,35 @@
+.TopBar{
+    position: absolute;
+width: 1240px;
+height: 88px;
+left: 200px;
+top: 0px;
+display: flex;
+}
+.ContentRight{
+    display: flex;
+}
+.ContentLeft
+{
+   
+
+
+/* 20/20 Bold */
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+
+
+/* Orange/$-Orange-400 */
+
+color: #FF9138;
+
+
+/* Inside auto layout */
+
+
+}

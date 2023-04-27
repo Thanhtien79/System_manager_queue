@@ -1,0 +1,134 @@
+.ListMenuBar {
+  position: absolute;
+  width: 200px;
+  height: 810px;
+  left: 0px;
+  top: 0px;
+
+  /* White */
+
+  background: #FFFFFF;
+  /* Dropdown */
+
+  box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+  border-radius: 16px 0px 0px 16px;
+}
+
+/* .MenuBar img{
+    
+position: absolute;
+width: 20px;
+height: 20px;
+margin: 0px;
+
+} */
+.Logo img{
+  position: absolute;
+  width: 80px;
+  height: 64px;
+  left: 60px;
+  top: 32px;
+
+}
+
+
+
+.MenuBar img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  margin-top: 4px;
+
+}
+
+.MenuBar a {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+
+  /* Gray/$-gray-300 */
+
+  color: #7E7D88;
+  margin-left: 42px;
+
+
+}
+
+.ItemDashBoard {
+
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 0px;
+  top: 150px;
+
+  /* White */
+
+  background: #FFFFFF;
+}
+
+.ItemThiebi {
+
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 0px;
+  top: 204px;
+
+}
+
+.ItemDichvu {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 0px;
+  top: 258px;
+}
+
+.ItemCapso {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 0px;
+  top: 312px;
+}
+
+.ItemBaocao {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 0px;
+  top: 366px;
+}
+
+.ItemCaidat {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 0px;
+  top: 420px;
+}
+
+.ButtonLogout button {
+  position: absolute;
+  width: 170px;
+  height: 49px;
+  left: 12px;
+  top: 732px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  background: #FFF2E7;
+  border-radius: 8px;
+  border-color: #FF7506;
+  color: #FF7506;
+
+}

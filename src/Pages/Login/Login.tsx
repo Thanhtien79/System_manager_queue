@@ -20,7 +20,7 @@ export default function Login() {
                     </div>
                     <div className={Class.Input}>
                         <p>Tên đăng nhập *</p>
-                        <Input placeholder=''/>
+                        <Input placeholder='' />
                     </div>
                     <div className={Class.Pass}>
                         <p>Mật khẩu *</p>
@@ -28,7 +28,7 @@ export default function Login() {
 
                         {/* <button onClick={ }>  <EyeInvisibleOutlined /></button> */}
                     </div>
-                   
+
 
 
 
@@ -37,7 +37,8 @@ export default function Login() {
                     </div>
                     <div className={Class.BtnLogin}>
                         <Link to="/Info"  >
-                            <button>Đăng nhập</button>p</Link>
+                            <button>Đăng nhập</button>
+                        </Link>
                     </div>
 
                 </div>
