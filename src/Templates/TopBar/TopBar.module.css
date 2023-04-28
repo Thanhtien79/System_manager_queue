@@ -1,35 +1,83 @@
-.TopBar{
+.TopBar {
     position: absolute;
-width: 1240px;
-height: 88px;
-left: 200px;
-top: 0px;
-display: flex;
-}
-.ContentRight{
+    width: 1240px;
+    height: 88px;
+    left: 200px;
+    top: 0px;
     display: flex;
 }
-.ContentLeft
-{
+
+
+
+.ContentLeft {
+
+    margin-left: 24px;
+    margin-top: 29px;
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-400 */
+
+    color: #FF9138;
+
+
+    /* Inside auto layout */
+
+
+}
+
+
+.ImgRing img {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 260px;
+    top: 28px;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    border-radius: 32px;
+
+}
+
+.ImgAvt img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 196px;
+    top: 24px;
+    border-radius: 48px;
+}
+.ContentRight {
+ 
    
-
-
-/* 20/20 Bold */
-
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height, or 150% */
-
-
-/* Orange/$-Orange-400 */
-
-color: #FF9138;
-
-
-/* Inside auto layout */
-
-
+    margin-left: 880px;
+    margin-top: 10px;
+}
+.Name{
+    margin: 15px 0;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7E7D88;
+}
+.Names{
+    position: absolute;
+    top: 45px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
 }

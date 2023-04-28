@@ -3,6 +3,7 @@ import LogoAlta from '../../assets/img/Logo alta.png'
 import LogoRight from '../../assets/img/Frame.png'
 import Class from '../../Pages/SetPass/SetPass.module.css'
 import { Button, Input, Space } from 'antd';
+import { Link } from 'react-router-dom'
  
 export default function SetPass() 
 {
@@ -32,7 +33,8 @@ export default function SetPass()
                 
                    
                     <div className={Class.BtnLogin}> 
-                    <button type='button' >Xác nhận</button>
+                     <Link to='/Login'><button type='button' >Xác nhận</button></Link>
+                    
                     </div>
 
                 </div>

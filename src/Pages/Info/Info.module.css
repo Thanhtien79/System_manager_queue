@@ -1,0 +1,114 @@
+.TableInfo {
+    position: absolute;
+    width: 1112px;
+    height: 397px;
+    left: 224px;
+    top: 168px;
+
+    /* White */
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(219, 219, 219, 0.5);
+    border-radius: 12px;
+}
+
+.Avatar img {
+    position: absolute;
+    width: 248px;
+    height: 248px;
+    left: 24px;
+    top: 40px;
+
+
+    border-radius: 318px;
+}
+
+.Camera img {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 195px;
+    top: 246px;
+
+    /* Orange/$-Orange-500 */
+
+
+    /* White */
+
+
+}
+
+.Namee p {
+
+    position: absolute;
+    width: 186px;
+    height: 36px;
+    left: 55px;
+    top: 307px;
+
+    /* 24/24 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+
+}
+
+.InfoLeft {
+    position: absolute;
+    width: 320px;
+    height: 44px;
+    left: 296px;
+    top: 40px;
+
+}
+
+.InfoRight {
+    position: absolute;
+    width: 384px;
+    height: 90px;
+    left: 704px;
+    top: 40px;
+
+}
+
+.InfoRight Input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+
+    /* Gray/$-gray-50 */
+
+    background: #EAEAEC;
+    border-radius: 6px;
+}
+
+.InfoLeft Input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+
+    /* Gray/$-gray-50 */
+
+    background: #EAEAEC;
+    border-radius: 6px;
+}
+.InfoLeft p{
+    ;
+}

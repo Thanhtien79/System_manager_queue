@@ -2,6 +2,7 @@ import React from 'react'
 import LogoAlta from '../../assets/img/Logo alta.png'
 import LogoRight from '../../assets/img/Frame.png'
 import Class from '../../Pages/ForgotPass/ForgotPass.module.css'
+import { Link } from 'react-router-dom'
 export default function ForgotPass() {
   return (
     <div className={Class.ForgotPass}>
@@ -25,7 +26,7 @@ export default function ForgotPass() {
             <button type='button' >Huỷ</button>
           </div>
           <div className={Class.Resume}>
-            <button type='button' >Tiếp tục</button>
+            <Link to='/SetPass'><button type='button' >Tiếp tục</button></Link>
           </div>
 
         </div>
