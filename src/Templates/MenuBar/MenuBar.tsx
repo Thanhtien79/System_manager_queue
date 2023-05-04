@@ -18,11 +18,11 @@ export default function MenuBar() {
       <div className={Class.MenuBar}>
         <div className={Class.ItemDashBoard} >
           <img src={DashBoard}></img>
-          <a>DashBoard</a>
+          <Link to="/DashBoard">DashBoard</Link>
         </div>
         <div className={Class.ItemThiebi} >
           <img src={ThietBi}></img>
-          <a>Thiết bị</a>
+          <Link to="/Device">Thiết bị</Link>
         </div>
         <div className={Class.ItemDichvu} >
           <img src={DichVu}></img>

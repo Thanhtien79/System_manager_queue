@@ -22,6 +22,11 @@ height: 20px;
 margin: 0px;
 
 } */
+.ItemDashBoard :hover{
+  background: #FF7506;
+  color: #FFFFFF;
+}
+
 .Logo img{
   position: absolute;
   width: 80px;

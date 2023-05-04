@@ -36,7 +36,7 @@ export default function Login() {
                         <Link to="/ForgotPass"> Quên mật khẩu ?</Link>
                     </div>
                     <div className={Class.BtnLogin}>
-                        <Link to="/Info"  >
+                        <Link to="/DashBoard"  >
                             <button>Đăng nhập</button>
                         </Link>
                     </div>
