@@ -1,0 +1,269 @@
+.MenuAdd {
+    position: absolute;
+    width: 1152px;
+    height: 550px;
+    left: 224px;
+    top: 156px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadowbox */
+
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.EditForm h1 {
+    position: absolute;
+    width: 1000px;
+    height: 36px;
+    left: 224px;
+    top: 104px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* 24/24 Bold */
+
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.MenuAdd Input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 270px 10px 12px;
+    gap: 10px;
+
+    width: 530px;
+    height: 44px;
+
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Gray/$-gray-100 */
+
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Icon {
+    color: red;
+}
+
+.Title {
+    width: 2000px;
+    height: 24px;
+
+    /* 16/16 Semi */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    /* identical to box height, or 150% */
+
+
+    align-items: center;
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+
+}
+
+.MenuAdd p {
+
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    left: 24px;
+    top: 16px;
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+
+}
+
+.MenuAddRight {
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 588px;
+    top: 66px;
+}
+
+.MenuAddLeft {
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 24px;
+    top: 66px;
+
+}
+
+.UseSevice {
+    position: absolute;
+    width: 1104px;
+    height: 76px;
+    left: 24px;
+    top: 320px;
+}
+
+.UseSevice Input {
+    width: 1093px;
+    height: 44px;
+}
+
+.Titles {
+    position: absolute;
+    width: 179px;
+    height: 21px;
+    left: 10px;
+    top: 85px;
+
+    /* 14/14 Reg */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/$-gray-300 */
+
+    color: #7E7D88;
+
+}
+
+.MenuAddRight select {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 24px;
+
+    width: 530px;
+    height: 44px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Gray/$-gray-100 */
+
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.BtnCance button {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 634.5px;
+    top: 730px;
+    color: #FF9138;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    /* Orange/$-Orange-400 */
+
+    border: 1.5px solid #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+
+.BtnAdd button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 837.5px;
+    top: 730px;
+
+    color: white;
+    /* Orange/$-Orange-400 */
+
+    background: #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+
+.MenuAddRight select option[disabled]:first-child {
+    color: gray;
+}
+
+::placeholder {
+    color: #535261;
+}

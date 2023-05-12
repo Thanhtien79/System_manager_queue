@@ -26,7 +26,7 @@ export default function MenuBar() {
         </div>
         <div className={Class.ItemDichvu} >
           <img src={DichVu}></img>
-          <a>Dịch vụ</a>
+          <Link to="/DichVu">Dịch vụ</Link>
         </div>
         <div className={Class.ItemCapso} >
           <img src={CapSo}></img>

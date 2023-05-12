@@ -1,0 +1,50 @@
+/* Adjust the style of the date picker container */
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+/* Style the date picker input field */
+.react-datepicker__input-container input {
+  width: 130px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+  color: #A9A9B0;
+
+}
+
+/* Style the calendar icon */
+
+
+/* Style the selected date */
+.react-datepicker__day--selected {
+  background-color: #428bca;
+  color: #fff;
+}
+
+/* Style the day cells */
+.react-datepicker__day {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Style the previous and next month buttons */
+
+
+.Date img {
+  width: 20px;
+  height: 20px;
+  
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

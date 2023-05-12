@@ -23,7 +23,8 @@ export default function ForgotPass() {
           </div>
 
           <div className={Class.Cancel}>
-            <button type='button' >Huỷ</button>
+            <Link to='/Login'>  <button type='button' >Huỷ</button></Link>
+
           </div>
           <div className={Class.Resume}>
             <Link to='/SetPass'><button type='button' >Tiếp tục</button></Link>

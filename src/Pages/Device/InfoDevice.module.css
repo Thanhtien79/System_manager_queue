@@ -1,0 +1,212 @@
+.Title h1 {
+    position: absolute;
+    width: 169px;
+    height: 36px;
+    left: 225px;
+    top: 104px;
+
+    /* 24/24 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.Info {
+    position: absolute;
+    width: 1112px;
+    height: 604px;
+    left: 224px;
+    top: 156px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadowbox */
+
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.Titles h1 {
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    left: 24px;
+    top: 16px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+
+}
+
+.TitleInfoRight {
+    position: absolute;
+    width: 178px;
+    height: 24px;
+    left: 24px;
+    top: 66px;
+
+}
+
+.TitleInfoLeft {
+    position: absolute;
+    width: 197px;
+    height: 24px;
+    left: 568px;
+    top: 66px;
+}
+
+.Inline {
+    position: absolute;
+    width: 795px;
+    height: 56px;
+    left: 24px;
+    top: 186px;
+}
+
+.MenuTitle {
+
+
+    /* 16/16 Semi */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    /* identical to box height, or 150% */
+
+
+    align-items: center;
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.InfoTitle {
+  
+
+    /* 16/16 Reg */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+  
+    align-items: center;
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+}
+.InfoTitles {
+  
+
+    /* 16/16 Reg */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+}
+.EditDevice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 4px;
+    gap: 4px;
+
+    position: absolute;
+    width: 80px;
+    height: 94px;
+    left: 1135px;
+
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.EditDevice img {
+
+
+    width: 28px;
+    height: 28px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.EditDevice a {
+    width: 72px;
+    height: 38px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+    text-decoration: none;
+
+    /* Inside auto layout */
+
+
+}
+
+

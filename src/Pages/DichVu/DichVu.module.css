@@ -389,4 +389,35 @@ tr:nth-child(2n) {
 
 
 }
+.IconNext{
+    position: absolute;
+    left: 50%;
+
+    top: 23.5%;
+    
+    /* Gray/$-gray-400 Text */
+    
+    
+}
+.DateStart p{
+    position: absolute;
+    width: 106px;
+    height: 24px;
+    left: 548px;
+    top: 156px;
+    
+    /* 16/16 Semi */
+    
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    
+    /* Gray/$-gray-500 */
+    
+    color: #282739; 
+}
 
