@@ -221,6 +221,9 @@ td>a {
 td>a:hover {
     text-decoration: none;
 }
+a{
+    text-decoration:none;
+}
 
 .link {
     display: flex;

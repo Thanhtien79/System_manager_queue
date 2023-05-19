@@ -85,7 +85,7 @@ export default function Device() {
                             </div>
                         </td>
                         <td className={Class.link}><a href="">Chi tiết</a></td>
-                        <td className={Class.linkUpdate}><a href="">Cập nhật</a></td>
+                        <td className={Class.linkUpdate}><a href="/UpdateDichVu">Cập nhật</a></td>
                     </tr>
                     <tr>
                         <td>KIO_01</td>
@@ -210,7 +210,7 @@ export default function Device() {
             </div>
             <div className={Class.AddDevice}>
                 <img src={Vector}></img>
-                <Link to='/AddDevice'> Thêm thiết bị</Link>
+                <Link to='/AddDichVu'> Thêm dịch vụ</Link>
             </div>
 
 

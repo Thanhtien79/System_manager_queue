@@ -49,9 +49,9 @@ export default function ManagerDevice() {
           <span className={Class.InfoTitles}> Khám tim mạch, Khám sản - Phụ khoa,Khám răng hàm mặt, Khám tai mũi họng, khám hô hấp, Khám tổng quát.</span>
         </div>
         <div className={Class.EditDevice}>
-            <img src={Edit}></img>
-            <Link to='/EditDevice'> Cập nhập thiết bị</Link>
-            </div>
+          <img src={Edit}></img>
+          <Link to='/EditDevice'> Cập nhập thiết bị</Link>
+        </div>
       </div>
 
     </div>

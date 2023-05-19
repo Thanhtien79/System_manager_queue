@@ -12,6 +12,9 @@ import AddDevice from './Pages/Device/AddDevice';
 import InfoDevice from './Pages/Device/InfoDevice'
 import EditDevice from './Pages/Device/EditDevice';
 import DichVu from './Pages/DichVu/DichVu';
+import AddDichVu from './Pages/DichVu/AddDichVu';
+import UpdateDichVu from './Pages/DichVu/Update';
+import InfoDichVu from './Pages/DichVu/InfoDichVu';
 
 
 function App() {
@@ -30,6 +33,9 @@ function App() {
         <Route path="/InfoDevice" element={<InfoDevice></InfoDevice>}></Route>
         <Route path="/EditDevice" element={<EditDevice></EditDevice>}></Route>
         <Route path="/DichVu" element={<DichVu></DichVu>}></Route>
+        <Route path="/AddDichVu" element={<AddDichVu></AddDichVu>}></Route>
+        <Route path="/UpdateDichVu" element={<UpdateDichVu></UpdateDichVu>}></Route>
+        <Route path="/InfoDichVu" element={<InfoDichVu></InfoDichVu>}></Route>
 
       </Routes>
     </Router>

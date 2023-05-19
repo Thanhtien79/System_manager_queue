@@ -68,7 +68,7 @@ export default function AddDevice() {
             </div>
             <div className={Class.BtnCance}>
 
-            <Link to='/Login'>  <button type='button' >Huỷ</button></Link>
+            <Link to='/Login'>  <button type='button' >Huỷ bỏ</button></Link>
             </div>
             <div className={Class.BtnAdd}>
             <Link to='/SetPass'><button type='button' >Thêm thiết bị</button></Link>
