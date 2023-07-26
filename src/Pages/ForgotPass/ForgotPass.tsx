@@ -1,9 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LogoAlta from '../../assets/img/Logo alta.png'
 import LogoRight from '../../assets/img/Frame.png'
 import Class from '../../Pages/ForgotPass/ForgotPass.module.css'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
+import { onAuthStateChanged, User, signOut, signInWithEmailAndPassword,sendPasswordResetEmail } from 'firebase/auth';
+import { auth } from '../../FireBaseConfig/FireBase'
+
 export default function ForgotPass() {
+
+    const [email, setEmail] = useState('');
+    const [resetSent, setResetSent] = useState(false);
+    const navigate = useNavigate();
+
+  
+    const handleResetPassword = async () => {
+
+      if( email==""){
+        alert("Vui lòng điền đầy đủ thông tin")
+      }
+      else{
+        try {
+          await sendPasswordResetEmail(auth,email);
+          setResetSent(true);
+          navigate("/SetPass")  
+        } catch (error) {
+          alert("Lỗi gửi mail")
+        }
+      }
+
+     
+    };
+  
   return (
     <div className={Class.ForgotPass}>
       <div className={Class.BoxForgotPass}>
@@ -19,7 +46,7 @@ export default function ForgotPass() {
             <p> Vui lòng nhập email để đặt lại mật khẩu của bạn*</p>
           </div>
           <div className={Class.Input}>
-            <input type='text' ></input>
+            <input type='text'  onChange={(event) => { setEmail(event.target.value) }} ></input>
           </div>
 
           <div className={Class.Cancel}>
@@ -27,8 +54,9 @@ export default function ForgotPass() {
 
           </div>
           <div className={Class.Resume}>
-            <Link to='/SetPass'><button type='button' >Tiếp tục</button></Link>
+            <button type='button' onClick={handleResetPassword} >Tiếp tục</button>
           </div>
+          
 
         </div>
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import { auth } from '../../FireBaseConfig/FireBase'
+import { onAuthStateChanged, User, signOut } from 'firebase/auth';
 import MenuBar from '../../Templates/MenuBar/MenuBar'
 import LogoAlta from '../../assets/img/Logo alta.png'
 import TopBar from '../../Templates/TopBar/TopBar'
@@ -6,7 +7,14 @@ import Class from './Info.module.css'
 import Ava from '../../assets/img/AvatarBig.png'
 import Cmr from '../../assets/img/Group624817.png'
 import Input from 'antd/es/input/Input'
+import { useState } from 'react'
 export default function Info() {
+  const [user, setUser] = useState<User | null>(null);
+
+
+  onAuthStateChanged(auth, (currentUser) => {
+       setUser(currentUser);
+   });
   return (
     <div className={Class.Info}>
 
@@ -24,7 +32,7 @@ export default function Info() {
           <img src={Cmr}></img>
         </div>
         <div className={Class.Namee}>
-          <p>Lê Quỳnh Ái Vân</p>
+          <p>{user?.email}</p>
         </div>
         <div className={Class.InfoLeft}>
           <div className={Class.NameUser}>

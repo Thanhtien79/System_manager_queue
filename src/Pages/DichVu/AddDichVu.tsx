@@ -4,9 +4,51 @@ import MenuBar from '../../Templates/MenuBar/MenuBar'
 import TopBar from '../../Templates/TopBar/TopBar'
 import { Button, Input, Space, Checkbox } from 'antd';
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
+import { useNavigate } from 'react-router-dom';
+import { collection, getDocs, query, where, onSnapshot, CollectionReference, Query, DocumentData, addDoc } from 'firebase/firestore';
+import { db } from '../../FireBaseConfig/FireBase';
 import { flattenDiagnosticMessageText } from 'typescript';
 import { Link } from 'react-router-dom'
 export default function AddDichVu() {
+    
+    const [serviceCode, setServiceCode] = useState("");
+    const [serviceName, setServiceName] = useState("");
+    const [serviceDes, setServiceDes] = useState("");
+    const [serviceStatus, setServiceStatus] = useState(2);
+    const [serviceIncrease, setServiceIncrease] = useState({ from: 0, to: 0 });
+    const [prefix, setPrefix] = useState(0);
+    const [surfix, setSurfix] = useState(0);
+    const handleFromChange = (e:any) => {
+        setServiceIncrease((prevValue) => ({
+          ...prevValue,
+          from: e.target.value,
+        }));
+    };
+    const handleToChange = (e:any) => {
+        setServiceIncrease((prevValue) => ({
+          ...prevValue,
+          to: e.target.value,
+        }));
+    };
+    const colRef = collection(db, "Service");
+    const navigate = useNavigate();
+    const addService = async () => {
+        if(serviceCode === '' || serviceName === '' || serviceDes === ''){
+            alert("Vui lòng nhập đủ các trường!!!");
+        }else{
+            await addDoc(colRef, {
+                service_code: serviceCode,
+                service_name: serviceName,
+                service_des: serviceDes,
+                service_status: serviceStatus,
+                service_increase: serviceIncrease,
+                service_prefix: prefix,
+                service_surfix: surfix
+            })
+            alert('Thêm dịch vụ thành công');
+            navigate("/manage-service");
+        }
+    }
     const onChange = (e: CheckboxChangeEvent) => {
         console.log(`checked = ${e.target.checked}`);
     };
@@ -29,12 +71,12 @@ export default function AddDichVu() {
                     <div className={Class.Code}>
                         <span className={Class.Title}>Mã dịch vụ: </span>
                         <span className={Class.Icon}>*</span>
-                        <Input placeholder='201' />
+                        <Input placeholder="" onChange={(e) => setServiceCode(e.target.value)} />
                     </div>
                     <div className={Class.NameCode}>
                         <span className={Class.Title}>Tên dịch vụ: </span>
                         <span className={Class.Icon} >*</span>
-                        <Input placeholder='Khám tim mạch' />
+                        <Input placeholder='Khám tim mạch'  onChange={(e) => setServiceName(e.target.value)}/>
                     </div>
                 </div>
                 <div className={Class.BoxRight}>

@@ -1,9 +1,21 @@
-import React from 'react'
+
 import Class from './TopBar.module.css'
 import Ring from '../../assets/img/Frame271.png'
 import Ava from '../../assets/img/avatar.png'
 import { Link } from 'react-router-dom'
+import { auth } from '../../FireBaseConfig/FireBase'
+import { onAuthStateChanged, User, signOut } from 'firebase/auth';
+
+import React, { useState } from 'react'
 export default function TopBar() {
+  const [user, setUser] = useState<User | null>(null);
+
+
+   onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser);
+    });
+
+  
   return (
     <div className={Class.TopBar}>
       <div className={Class.ContentLeft}>
@@ -19,7 +31,7 @@ export default function TopBar() {
 
 
         <p className={Class.Name}>Xin Chào</p>
-        <p className={Class.Names}>Lê Quỳnh Ái Vân</p>
+        <p className={Class.Names}>{user?.email}</p>
       </div>
     </div>
   )

@@ -136,6 +136,15 @@
     top: 66px;
 
 }
+.Right {
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 0px;
+    top: 85px;
+
+}
+
 
 .UseSevice {
     position: absolute;
@@ -186,6 +195,7 @@
     align-items: center;
     padding: 10px 12px;
     gap: 24px;
+    top: 40px;
 
     width: 530px;
     height: 44px;

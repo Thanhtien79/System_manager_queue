@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from "react";
 import Class from './Device.module.css'
 import MenuBar from '../../Templates/MenuBar/MenuBar'
@@ -8,10 +8,24 @@ import { Input, Space } from 'antd';
 import { Link } from 'react-router-dom';
 import { Pagination } from 'antd';
 import Vector from '../../assets/img/Vector.png'
+import { db } from '../../FireBaseConfig/FireBase'
+import { collection,getDocs } from '@firebase/firestore';
+import GetDevice from './GetDevice';
 
 export default function Device() {
+    const [devices,setDevices] = useState ([]);
+    const deColRef = collection ( db,"Devices");
+    useEffect(()=>{
+        const getDevices= async () =>{
+         const data: any= await getDocs(deColRef);
+         setDevices(data.docs.map((doc:any) =>({...doc.data(), id: doc.id})));
+
+        };
+        getDevices() ;
+    },[])
+  
     const [select1Value, setSelect1Value] = useState('option1');
-    const [select2Value, setSelect2Value] = useState('option1');
+    const [select2Value, setSelect2Value] = useState('option2');
     const { Search } = Input;
     const handleSelect1Change = (event: any) => {
         setSelect1Value(event.target.value);
@@ -53,170 +67,9 @@ export default function Device() {
                     width: 300, height: 44,
                 }} />
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Mã thiết bị</th>
-                        <th>Tên thiết bị</th>
-                        <th>Địa chỉ IP</th>
-                        <th style={{ width: '120px' }}>Trạng thái hoạt động</th>
-                        <th>Trạng thái kết nối</th>
-                        <th style={{ width: '100px' }}>Dịch vụ sử dụng</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>KIO_01</td>
-                        <td>Kiosk</td>
-                        <td>192.168.1.10</td>
-                        <td className={Class.status}>
-                            <span className={Class.actions}></span>
-                            <p className={Class.title}>Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={Class.statusConnect}>
-                                <span className={Class.actionsConnect}></span>
-                                <p className={Class.titleConnect}>Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={Class.element}>Khám tim mạch, Khám mắt</p>
-                            <a href="" className={Class.linkUpdate}>Xem thêm</a>
-                        </td>
-                        <td className={Class.link}><Link to="/InfoDevice">Chi tiết</Link></td>
-                        <td className={Class.linkUpdate}><Link to="/EditDevice">Cập nhật</Link></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-                        <td>Kiosk</td>
-                        <td>192.168.1.10</td>
-                        <td className={Class.status}>
-                            <span className={Class.actionsSuccess}></span>
-                            <p className={Class.titleSuccess}>Hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={Class.statusConnect}>
-                                <span className={Class.actionsSuccess}></span>
-                                <p className={Class.titleSuccess}>Kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={Class.element}>Khám tim mạch, Khám mắt</p>
-                            <a href="" className={Class.linkUpdate}>Xem thêm</a>
-                        </td>
-                        <td className={Class.link}><a href="">Chi tiết</a></td>
-                        <td className={Class.linkUpdate}><a href="">Cập nhật</a></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-                        <td>Kiosk</td>
-                        <td>192.168.1.10</td>
-                        <td className={Class.status}>
-                            <span className={Class.actionsSuccess}></span>
-                            <p className={Class.titleSuccess}>Hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={Class.statusConnect}>
-                                <span className={Class.actionsConnect}></span>
-                                <p className={Class.titleConnect}>Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={Class.element}>Khám tim mạch, Khám mắt</p>
-                            <a href="" className={Class.linkUpdate}>Xem thêm</a>
-                        </td>
-                        <td className={Class.link}><a href="">Chi tiết</a></td>
-                        <td className={Class.linkUpdate}><a href="">Cập nhật</a></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-                        <td>Kiosk</td>
-                        <td>192.168.1.10</td>
-                        <td className={Class.status}>
-                            <span className={Class.actions}></span>
-                            <p className={Class.title}>Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={Class.statusConnect}>
-                                <span className={Class.actionsConnect}></span>
-                                <p className={Class.titleConnect}>Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={Class.element}>Khám tim mạch, Khám mắt</p>
-                            <a href="" className={Class.linkUpdate}>Xem thêm</a>
-                        </td>
-                        <td className={Class.link}><a href="">Chi tiết</a></td>
-                        <td className={Class.linkUpdate}><a href="">Cập nhật</a></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-                        <td>Kiosk</td>
-                        <td>192.168.1.10</td>
-                        <td className={Class.status}>
-                            <span className={Class.actions}></span>
-                            <p className={Class.title}>Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={Class.statusConnect}>
-                                <span className={Class.actionsConnect}></span>
-                                <p className={Class.titleConnect}>Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={Class.element}>Khám tim mạch, Khám mắt</p>
-                            <a href="" className={Class.linkUpdate}>Xem thêm</a>
-                        </td>
-                        <td className={Class.link}><a href="">Chi tiết</a></td>
-                        <td className={Class.linkUpdate}><a href="">Cập nhật</a></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-                        <td>Kiosk</td>
-                        <td>192.168.1.10</td>
-                        <td className={Class.status}>
-                            <span className={Class.actions}></span>
-                            <p className={Class.title}>Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={Class.statusConnect}>
-                                <span className={Class.actionsConnect}></span>
-                                <p className={Class.titleConnect}>Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={Class.element}>Khám tim mạch, Khám mắt</p>
-                            <a href="" className={Class.linkUpdate}>Xem thêm</a>
-                        </td>
-                        <td className={Class.link}><a href="">Chi tiết</a></td>
-                        <td className={Class.linkUpdate}><a href="">Cập nhật</a></td>
-                    </tr>
-                    <tr>
-                        <td>KIO_01</td>
-                        <td>Kiosk</td>
-                        <td>192.168.1.10</td>
-                        <td className={Class.status}>
-                            <span className={Class.actions}></span>
-                            <p className={Class.title}>Ngưng hoạt động</p>
-                        </td>
-                        <td>
-                            <div className={Class.statusConnect}>
-                                <span className={Class.actionsConnect}></span>
-                                <p className={Class.titleConnect}>Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p className={Class.element}>Khám tim mạch, Khám mắt</p>
-                            <a href="" className={Class.linkUpdate}>Xem thêm</a>
-                        </td>
-                        <td className={Class.link}><a href="">Chi tiết</a></td>
-                        <td className={Class.linkUpdate}><a href="">Cập nhật</a></td>
-                    </tr>
-                </tbody>
-            </table>
-
+           <div className={Class.TableDevice}>
+            <GetDevice></GetDevice>
+           </div>
             <div className={Class.Pagination}>
                 <Pagination defaultCurrent={1} total={50} />
             </div>

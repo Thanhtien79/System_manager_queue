@@ -1,0 +1,304 @@
+.Box {
+    position: absolute;
+    width: 1192px;
+    height: 534px;
+    left: 224px;
+    top: 172px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadowbox */
+
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.Title h1 {
+    position: absolute;
+    width: 193px;
+    height: 36px;
+    left: 224px;
+    top: 104px;
+
+    /* 24/24 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+
+}
+
+.BoxTitle p {
+    position: absolute;
+    width: 154px;
+    height: 30px;
+    left: 24px;
+    top: 16px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+
+.Code {
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 550px;
+    height: 44px;
+    left: 24px;
+    top: 58px;
+}
+
+.Code Input {
+    height: 44px;
+    top: 6px;
+}
+
+.Descrip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 560px;
+    height: 192px;
+    left: 24px;
+    top: 146px;
+}
+
+.Note {
+    position: absolute;
+    width: 179px;
+    height: 21px;
+    left: 24px;
+    top: 352px;
+
+    /* 14/14 Reg */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/$-gray-300 */
+
+    color: #7E7D88;
+}
+
+.Icon {
+    color: red;
+}
+
+.Titles {
+    position: absolute;
+    width: 550px;
+    height: 44px;
+    left: 608px;
+    top: 58px;
+}
+
+.BoxRight {
+    position: absolute;
+    width: 560px;
+    height: 420px;
+    left: 608px;
+    top: 90px;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    border-radius: 8px;
+}
+
+.OptionA p {
+    position: absolute;
+    width: 177px;
+    height: 30px;
+    left: 24px;
+    top: 16px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.OptionB p {
+    position: absolute;
+    width: 177px;
+    height: 30px;
+    left: 24px;
+    top: 214px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.Option1 {
+    position: absolute;
+    width: 500px;
+    height: 44px;
+    top: 40px;
+    left: 22px;
+ 
+
+
+    /* 16/16 Semi */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    /* identical to box height, or 150% */
+
+    align-items: center;
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Option2 {
+    position: absolute;
+    width: 500px;
+    height: 44px;
+    top: 240px;
+    left: 22px;
+ 
+
+
+    /* 16/16 Semi */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    /* identical to box height, or 150% */
+
+    align-items: center;
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.BtnCance button {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 650px;
+    top: 730px;
+    color: #FF9138;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    /* Orange/$-Orange-400 */
+
+    border: 1.5px solid #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+
+.BtnAdd button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 829px;
+    top: 730px;
+
+    color: white;
+    /* Orange/$-Orange-400 */
+
+    background: #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}

@@ -1,0 +1,32 @@
+.Date {
+    position: absolute;
+    width: 320px;
+    height: 72px;
+    left: 224px;
+    top: 104px;
+}
+
+.Search {
+    position: absolute;
+    width: 240px;
+    height: 72px;
+    left: 1096px;
+    top: 104px;
+}
+
+.TableHistory {
+    top: 200px;
+}
+
+.Pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 288px;
+    height: 32px;
+    left: 1048px;
+    top: 755px;
+}

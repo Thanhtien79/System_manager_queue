@@ -3,6 +3,9 @@ import Class from './Update.module.css'
 import MenuBar from '../../Templates/MenuBar/MenuBar'
 import TopBar from '../../Templates/TopBar/TopBar'
 import { Button, Input, Space, Checkbox } from 'antd';
+import { useNavigate, useParams } from 'react-router-dom';
+import { collection,doc, getDoc, getDocs, query, where, onSnapshot, CollectionReference, Query, DocumentData, addDoc ,updateDoc} from 'firebase/firestore';
+import { db } from '../../FireBaseConfig/FireBase';
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 import { flattenDiagnosticMessageText } from 'typescript';
 import { Link } from 'react-router-dom'
@@ -15,6 +18,65 @@ export default function AddDichVu() {
     const ClickChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         console.log('Change:', e.target.value);
     };
+    const {id} = useParams();
+    const [serviceCode, setServiceCode] = useState("");
+    const [serviceCodeUpdate, setServiceCodeUpdate] = useState("");
+    const [serviceName, setServiceName] = useState("");
+    const [serviceNameUpdate, setServiceNameUpdate] = useState("");
+    const [serviceDes, setServiceDes] = useState("");
+    const [serviceDesUpdate, setServiceDesUpdate] = useState("");
+    const [serviceIncreaseFrom, setServiceIncreaseFrom] = useState("")
+    const [serviceIncreaseTo, setServiceIncreaseTo] = useState("")
+    const [serviceIncreaseUpdate, setServiceIncreaseUpdate] = useState({from: 0, to: 0})
+    const [preFix, setPrefix] = useState(0)
+    const [surFix, setSurfix] = useState(0)
+    const navigate = useNavigate();
+    if(!id) return null;
+    const docRef = doc(db, "Service", id);
+    const getId = async () => {
+        const service = await getDoc(docRef);
+        if(service.exists()){
+            setServiceCode(service.data()?.service_code);
+            setServiceName(service.data()?.service_name);
+            setServiceDes(service.data()?.service_des);
+            setServiceIncreaseFrom(service.data()?.service_increase.from);
+            setServiceIncreaseTo(service.data()?.service_increase.to);
+            setPrefix(service.data()?.service_prefix);
+            setSurfix(service.data()?.service_surfix);
+        }
+    }
+    getId()
+    const handleFromChange = (e:any) => {
+        setServiceIncreaseUpdate((prevValue) => ({
+          ...prevValue,
+          from: e.target.value,
+        }));
+    };
+    const handleToChange = (e:any) => {
+        setServiceIncreaseUpdate((prevValue) => ({
+          ...prevValue,
+          to: e.target.value,
+        }));
+    };
+    const update = async () => {
+        const updatedServiceCode = serviceCodeUpdate || serviceCode;
+        const updatedServiceName = serviceNameUpdate || serviceName;
+        const updatedServiceDes = serviceDesUpdate || serviceDes;
+        let updatedServiceIncrease;
+        if (serviceIncreaseUpdate) {
+          updatedServiceIncrease = serviceIncreaseUpdate;
+        } else if (serviceIncreaseFrom || serviceIncreaseTo) {
+          updatedServiceIncrease = serviceIncreaseFrom || serviceIncreaseTo;
+        }
+        await updateDoc(docRef, {
+            service_code: updatedServiceCode,
+            service_name: updatedServiceName,
+            service_des: updatedServiceDes,
+            service_increase: updatedServiceIncrease,
+          });
+          alert("Cập nhật thành công!!!");
+          navigate('/manage-service');
+    }
 
     return (
         <div className={Class.AddDichVu}>

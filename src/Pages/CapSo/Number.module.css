@@ -1,0 +1,116 @@
+.Number {
+    position: relative;
+    width: 469px;
+    height: 385px;
+    top: 250px;
+    left: 450px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
+    background-image: linear-gradient(to top, #FF9138 40%, #FFFFFF 10%);
+}
+
+.Icon {
+    transform: translateX(92%);
+
+
+}
+
+.Threerows {
+    position: absolute;
+    width: 321px;
+    height: 183px;
+    left: 74px;
+    top: 48px;
+    text-align: center;
+
+}
+
+.Rows {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height, or 150% */
+
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+
+}
+
+.Rowss {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 60px;
+    /* identical to box height, or 107% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.Rowsss {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 60px;
+    /* id0entical to box height, or 150% */
+
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+
+}
+
+.Threerows span {
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+}
+
+.Row1 {
+    /* 09:30 11/10/2021 */
+
+
+
+    /* 22/22 Bold */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height, or 150% */
+
+    /* White */
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.Tworows {
+    width: 450px;
+    height: 33px;
+    text-align: left;
+    margin-top: 250px;
+    margin-left: 90px;
+}

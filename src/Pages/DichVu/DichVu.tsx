@@ -1,9 +1,11 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Class from './DichVu.module.css'
 import MenuBar from '../../Templates/MenuBar/MenuBar'
 import TopBar from '../../Templates/TopBar/TopBar'
-
+import { useParams } from 'react-router-dom';
+import { collection, getDocs,getDoc,doc, query, where, onSnapshot, CollectionReference, Query, DocumentData, addDoc } from 'firebase/firestore';
+import { db } from '../../FireBaseConfig/FireBase';
 import { Input, Space, DatePicker, DatePickerProps } from 'antd';
 import { Link } from 'react-router-dom';
 import { Pagination } from 'antd';
@@ -19,6 +21,58 @@ export default function Device() {
     const handleSelect1Change = (event: any) => {
         setSelect1Value(event.target.value);
     };
+    const {id} = useParams();
+    const [serviceCode, setServiceCode] = useState("");
+    const [serviceName, setServiceName] = useState("");
+    const [serviceDes, setServiceDes] = useState("");
+    const [selectStatus, setSelectStatus] = useState(0);
+    const [serviceIncreaseFrom, setServiceIncreaseFrom] = useState("")
+    const [serviceIncreaseTo, setServiceIncreaseTo] = useState("")
+    const [preFix, setPrefix] = useState(0)
+    const [serviceFinish, setServiceFinish] = useState<any>([]);
+    const handleChange = (newValue: string | null) => {
+      if(newValue){
+          const parseNewValue = parseInt(newValue, 10);
+          console.log(parseNewValue);
+          setSelectStatus(parseNewValue);
+      }
+    }
+    useEffect(() => {
+      const colRef = collection(db, "serviceFinish");
+      let newRef: Query<DocumentData> = colRef;
+      if(selectStatus !== 0){
+          newRef = query(colRef, 
+              where("status", '==', selectStatus)
+          );
+      }
+      onSnapshot(newRef, (snapshot) => {
+        const results: any[] = [];
+        snapshot.forEach((doc) => {
+          results.push({
+            id: doc.id,
+            ...doc.data()
+          });
+        });
+        setServiceFinish(results);
+      })
+    }, [selectStatus])
+    if (!id) return null;
+    const docRef = doc(db, "Service", id);
+    const getId = async () => {
+        const service = await getDoc(docRef);
+        if (service.exists()) {
+            setServiceCode(service.data()?.service_code);
+            setServiceName(service.data()?.service_name);
+            setServiceDes(service.data()?.service_des);
+            setServiceIncreaseFrom(service.data()?.service_increase.from);
+            setServiceIncreaseTo(service.data()?.service_increase.to);
+            setPrefix(service.data()?.service_prefix);
+        } else {
+            console.log('Document does not exist!');
+    }
+    };
+    getId();
+
 
 
     const onSearch = (value: string) => console.log(value);

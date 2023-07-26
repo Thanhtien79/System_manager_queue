@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import LogoAlta from '../../assets/img/Logo alta.png'
 import Class from './MenuBar.module.css'
 import DashBoard from '../../assets/img/element4.png'
@@ -9,7 +9,40 @@ import BaoCao from '../../assets/img/Frame1.png'
 import CaiDat from '../../assets/img/setting.png'
 import { LoginOutlined, MoreOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
+import { DownOutlined } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
+import { Dropdown, Space, Menu } from 'antd';
+import { onAuthStateChanged, User, signOut } from 'firebase/auth';
+import { auth } from '../../FireBaseConfig/FireBase'
 export default function MenuBar() {
+  const logout = async () => {
+    await signOut(auth);
+  };
+  const items = [
+    {
+      key: '1',
+      type: 'group',
+      children: [
+        {
+          key: '1-1',
+          label: 'Quản lý vai trò',
+          Link: '/VaiTro',
+
+        },
+        {
+          key: '1-2',
+          label: 'Quản lý tài khoản',
+          Link: '/Account',
+        },
+        {
+          key: '1-3',
+          label: 'Nhật ký người dùng',
+          Link: 'History',
+        },
+      ],
+    }
+  ]
+
   return (
     <div className={Class.ListMenuBar}>
       <div className={Class.Logo}>
@@ -30,22 +63,44 @@ export default function MenuBar() {
         </div>
         <div className={Class.ItemCapso} >
           <img src={CapSo}></img>
-          <a>Cấp số</a>
+          <Link to="/CapSo">Cấp số</Link>
         </div>
         <div className={Class.ItemBaocao} >
           <img src={BaoCao}></img>
-          <a>Báo cáo</a>
+          <Link to="/Report">Báo cáo</Link>
         </div>
         <div className={Class.ItemCaidat} >
           <img src={CaiDat}></img>
-          <a >Cài đặt thiết bị <MoreOutlined /></a>
+          <Dropdown
+            overlay={
+              <Menu>
+                {items.map((group) => (
+                  <Menu.ItemGroup key={group.key}>
+                    {group.children.map((item) => (
+                      <Menu.Item key={item.key}>
+                        <a href={item.Link}>{item.label}</a>
+                      </Menu.Item>
+                    ))}
+                  </Menu.ItemGroup>
+                ))}
+              </Menu>
+            }
+          >
+            <a href="/" onClick={(e) => e.preventDefault()}>
+              <Space>
+                Cài đặt hệ thống
+                <MoreOutlined />
+              </Space>
+            </a>
+          </Dropdown>
 
         </div>
         <div className={Class.ButtonLogout} >
           <Link to="/login"  >
-         
-            <button> <LoginOutlined />  Đăng Xuất</button>
+
+          <button onClick={logout}> <LoginOutlined />  Đăng Xuất</button>
           </Link>
+          
         </div>
 
       </div>

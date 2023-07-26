@@ -1,0 +1,169 @@
+.Title h1 {
+    position: absolute;
+    width: 225px;
+    height: 36px;
+    left: 224px;
+    top: 104px;
+
+    /* 24/24 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.Dropdown {
+    position: absolute;
+    width: 300px;
+    height: 72px;
+    left: 224px;
+    top: 156px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.Dropdown select {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    gap: 24px;
+
+    position: absolute;
+    width: 300px;
+    height: 44px;
+
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Gray/$-gray-100 */
+
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+
+.Search {
+    position: absolute;
+    width: 300px;
+    height: 72px;
+    left: 1036px;
+    top: 156px;
+}
+
+.actionsConnect {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 18px 10px;
+}
+
+.titleConnect {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #535261;
+    margin-top: 12px;
+}
+
+.actionsConnects {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin: 18px 10px;
+}
+
+.statusConnect {
+    display: flex;
+}
+
+.Pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 288px;
+    height: 32px;
+    left: 1050px;
+    top: 775px;
+}
+.AddDevice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 4px;
+    gap: 4px;
+
+    position: absolute;
+    width: 80px;
+    height: 94px;
+    left: 1360px;
+    top: 244px;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.AddDevice img {
+
+
+    width: 28px;
+    height: 28px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.AddDevice a {
+    width: 72px;
+    height: 38px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+    text-decoration: none;
+
+    /* Inside auto layout */
+
+
+}

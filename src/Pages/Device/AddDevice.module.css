@@ -175,6 +175,15 @@
 
 }
 
+.Right {
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 0px;
+    top: 85px;
+
+}
+
 .MenuAddRight select {
     box-sizing: border-box;
 
@@ -186,9 +195,10 @@
     align-items: center;
     padding: 10px 12px;
     gap: 24px;
-
+    top: 40px;
     width: 530px;
     height: 44px;
+
 
     /* white */
 
@@ -204,59 +214,62 @@
     order: 1;
     flex-grow: 0;
 }
-.BtnCance button{
+
+.BtnCance button {
     box-sizing: border-box;
 
     /* Auto layout */
-    
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px 24px;
     gap: 8px;
-    
+
     position: absolute;
     width: 147px;
     height: 48px;
     left: 634.5px;
     top: 730px;
     color: #FF9138;
-    
+
     /* Orange/$-Orange-50 */
-    
+
     background: #FFF2E7;
     /* Orange/$-Orange-400 */
-    
+
     border: 1.5px solid #FF9138;
     /* down */
-    
+
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px;
 }
-.BtnAdd button{
+
+.BtnAdd button {
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 24px;
-gap: 8px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
 
-position: absolute;
-width: 147px;
-height: 48px;
-left: 837.5px;
-top: 730px;
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 837.5px;
+    top: 730px;
 
-color: white;
-/* Orange/$-Orange-400 */
+    color: white;
+    /* Orange/$-Orange-400 */
 
-background: #FF9138;
-/* down */
+    background: #FF9138;
+    /* down */
 
-box-shadow: 0px 0px 6px #E7E9F2;
-border-radius: 8px;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
 }
+
 .MenuAddRight select option[disabled]:first-child {
     color: gray;
-  }
+}

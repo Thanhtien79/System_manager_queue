@@ -1,42 +1,45 @@
 .BoxLogin {
     position: relative;
-width: 1440px;
-height: 810px;
+    width: 1440px;
+    height: 810px;
 
 
-background: #F7F7F7;
-border-radius: 16px;
+    background: #F7F7F7;
+    border-radius: 16px;
 }
+
 /* logo alta */
 .Logoleft img {
-    
-position: absolute;
-width: 170px;
-height: 136px;
-left: 208px;
-top: 82px;
+
+    position: absolute;
+    width: 170px;
+    height: 136px;
+    left: 208px;
+    top: 82px;
 }
+
 .Text {
     position: absolute;
-left: 13.75%;
-right: 71.6%;
-top: 39.51%;
-bottom: 56.42%;
+    left: 13.75%;
+    right: 71.6%;
+    top: 39.51%;
+    bottom: 56.42%;
 
-/* 22/22 Bold */
+    /* 22/22 Bold */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 33px;
-/* identical to box height, or 150% */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height, or 150% */
 
 
-/* Gray/$-gray-500 */
+    /* Gray/$-gray-500 */
 
-color: #d7d6e6;
+    color: #d7d6e6;
 }
+
 .Input {
     display: flex;
     flex-direction: column;
@@ -44,7 +47,7 @@ color: #d7d6e6;
     align-items: flex-start;
     padding: 0px;
     gap: 4px;
-    
+
     position: absolute;
     width: 400px;
     height: 78px;
@@ -52,28 +55,31 @@ color: #d7d6e6;
     top: 293px;
 
 }
-.Input input{
+
+.Input input {
     height: 44px;
     width: 400px;
     border-radius: 8px;
     border-color: #13151861;
-    
+
 }
+
 .Pass {
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-padding: 0px;
-gap: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
 
-position: absolute;
-width: 400px;
-height: 75px;
-left: 94px;
-top: 384px;
-border-color: black;
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 94px;
+    top: 384px;
+    border-color: black;
 }
+
 .Pass Input {
     height: 25px;
 }
@@ -90,122 +96,148 @@ border-color: black;
 
 .PassForgot {
     position: absolute;
-width: 102px;
-height: 21px;
-left: 94px;
-top: 471px;
+    width: 102px;
+    height: 21px;
+    left: 94px;
+    top: 471px;
 
-/* 14/14 Reg */
+    /* 14/14 Reg */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-/* identical to box height, or 150% */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
 
 
-/* Red */
+    /* Red */
 
 }
-.PassForgot a{
+
+.PassForgot a {
     color: #E73F3F;
     text-decoration: none;
-    
-}
-.BtnLogin button{
-   
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 24px;
-gap: 8px;
-
-position: absolute;
-width: 162px;
-height: 40px;
-left: 215px;
-top: 511px;
-
-/* Orange/$-Orange-400 */
-
-background: #FF9138;
-/* down */
-
-box-shadow: 0px 0px 6px #E7E9F2;
-border-radius: 8px;
-border-color: #FF9138;
-color:  white;
 
 }
 
+.BtnLogin button {
 
-.LoginRight{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 162px;
+    height: 40px;
+    left: 215px;
+    top: 550px;
+
+    /* Orange/$-Orange-400 */
+
+    background: #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    border-color: #FF9138;
+    color: white;
+
+}
+
+
+.LoginRight {
     position: absolute;
     width: 848px;
     height: 810px;
     left: 592px;
     top: 0px;
-    
+
     /* White */
-    
+
     background: #FFFFFF;
 }
 
+.Erlog {
+    position: absolute;
+    width: 209px;
+    height: 21px;
+    left: 93px;
+    top: 500px;
+
+    /* 14/14 Reg */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+
+
+    /* Red */
+
+    color: #E73F3F;
+
+
+}
 
 .LogoRight img {
-    
-position: absolute;
-width: 605px;
-height: 614.06px;
-left: 79px;
-top: 112.94px;
-right: 164px;
+
+    position: absolute;
+    width: 605px;
+    height: 614.06px;
+    left: 79px;
+    top: 112.94px;
+    right: 164px;
 }
 
-.TextRight h1{
+.TextRight h1 {
     position: absolute;
-width: 142px;
-height: 54px;
-left: 454px;
-top: 407px;
+    width: 142px;
+    height: 54px;
+    left: 454px;
+    top: 407px;
 
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 51px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 51px;
 
 
-text-align: center;
+    text-align: center;
 
-color: #FF7506;
+    color: #FF7506;
 
 }
-.TextRights h1{
+
+.TextRights h1 {
     position: absolute;
-width: 361px;
-height: 54px;
-left: 454px;
-top: 407px;
+    width: 361px;
+    height: 54px;
+    left: 454px;
+    top: 407px;
 
-/* 36/36 Xbold */
+    /* 36/36 Xbold */
 
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 1000;
-font-size: 35px;
-line-height: 154px;
-/* identical t11o box height, or 150% */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 35px;
+    line-height: 154px;
+    /* identical t11o box height, or 150% */
 
-text-align: center;
+    text-align: center;
 
-/* Orange/$-Orange-500 */
+    /* Orange/$-Orange-500 */
 
-color: #FF7506;
+    color: #FF7506;
 
 }

@@ -1,0 +1,177 @@
+.BoxCapSo {
+    position: absolute;
+    width: 1192px;
+    height: 604px;
+    left: 224px;
+    top: 164px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadowbox */
+
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.Option select option[disabled]:first-child {
+    color: gray;
+}
+
+
+
+.Title h1 {
+    position: absolute;
+    width: 163px;
+    height: 36px;
+    left: 224px;
+    top: 104px;
+
+    /* 24/24 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+
+
+}
+
+.BoxCapSo h1 {
+    position: absolute;
+    width: 190px;
+    height: 48px;
+    left: 501px;
+    top: 24px;
+
+    /* 32/32 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 7000;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.BoxCapSo h3 {
+    position: absolute;
+    width: 265px;
+    height: 30px;
+    left: 470px;
+    top: 92px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+}
+
+.Option select {
+    position: absolute;
+    width: 370px;
+    height: 44px;
+    left: 408px;
+    top: 135px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    /* Gray/$-gray-400 Text */
+
+    color: #121213;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.BtnCance button {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 115px;
+    height: 48px;
+    left: 465px;
+    top: 250px;
+    color: #FF9138;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    /* Orange/$-Orange-400 */
+
+    border: 1.5px solid #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+
+.BtnPrint button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 115px;
+    height: 48px;
+    left: 612px;
+    top: 250px;
+
+    color: white;
+    /* Orange/$-Orange-400 */
+
+    background: #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+
+.MenuAddRight select option[disabled]:first-child {
+    color: gray;
+}

@@ -1,0 +1,208 @@
+.BoxAdd {
+    position: absolute;
+    width: 1192px;
+    height: 534px;
+    left: 224px;
+    top: 150px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadowbox */
+
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.MenuLeft {
+    position: absolute;
+    width: 550px;
+
+    left: 24px;
+    top: 66px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadowbox */
+
+
+}
+
+.MenuRight {
+    position: absolute;
+    width: 550px;
+
+    left: 608px;
+    top: 66px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Shadowbox */
+
+
+}
+
+.Title {
+    width: 60px;
+    height: 44px;
+
+    /* 16/16 Semi */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 44px;
+    /* identical to box height, or 150% */
+
+
+    align-items: center;
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Icon {
+    color: red;
+}
+
+.MenuLeft Input {
+    height: 44px;
+
+}
+
+.NameAccount Input {
+    height: 44px;
+}
+
+.Note {
+    position: absolute;
+    width: 500px;
+    height: 21px;
+
+    top: 370px;
+
+    /* 14/14 Reg */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/$-gray-300 */
+
+    color: #7E7D88;
+}
+
+.BoxAdd h1 {
+    position: absolute;
+    width: 181px;
+    height: 30px;
+    left: 24px;
+    top: 20px;
+
+    /* 20/20 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+
+.Titlle h1 {
+    position: absolute;
+    width: 194px;
+    height: 36px;
+    left: 224px;
+    top: 104px;
+
+    /* 24/24 Bold */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+
+    /* Orange/$-Orange-500 */
+
+    color: #FF7506;
+}
+.BtnCance button {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 650px;
+    top: 730px;
+    color: #FF9138;
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    /* Orange/$-Orange-400 */
+
+    border: 1.5px solid #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+
+.BtnAdd button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 829px;
+    top: 730px;
+
+    color: white;
+    /* Orange/$-Orange-400 */
+
+    background: #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}

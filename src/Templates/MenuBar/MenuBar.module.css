@@ -22,9 +22,10 @@ height: 20px;
 margin: 0px;
 
 } */
-.ItemDashBoard :hover{
+.MenuBar :hover{
   background: #FF7506;
   color: #FFFFFF;
+
 }
 
 .Logo img{
